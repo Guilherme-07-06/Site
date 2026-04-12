@@ -4,10 +4,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0px 30px;
+display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 ul {
     margin-top: 100px;
@@ -152,6 +154,14 @@ footer{
     border-top: 5px solid #0c0300;
     text-align: center;
     border-radius: 20px 20px 0 0;
+    margin-top: auto;
 
-    
+}
+footer a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+footer a:hover {
+    color: #65b63f; 
 }
