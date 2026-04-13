@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato O Mundo sobre Dinossauros </title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
    <header>
@@ -16,7 +17,7 @@
 
     <nav>
        <ul>
-        <li><a href="index.html">Início</a>
+        <li><a href="index.html">Início</a></li>
             <li><a href="eras.html">Eras</a></li>
             <li><a href="famosos.html">Dinossauros mais Famosos</a></li>
             <li><a href="curiosidades.html">Curiosidades</a></li>
@@ -30,6 +31,68 @@
      </nav>
 
     <hr>
+    <main>
+        <h2>Formas de Contato</h2>
+        <p>Escreva mensagens sobre idéias, dúvidas e elogios. Qualquer forma de Contato é bem vinda. </p>
+        <hr>
+    </main>
+
+<main style="text-align: center; padding: 20px;">
+    
+    <form class="cartao-contato" action="#" method="post">
+        
+        <div class="campo-grupo">
+            <label for="nome">Nome</label>
+            <div class="input-wrapper">
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+                <i class="fa-solid fa-user input-icon"></i>
+            </div>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="email">E-mail</label>
+            <div class="input-wrapper">
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                <i class="fa-solid fa-envelope input-icon"></i>
+            </div>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="assunto">Assunto</label>
+            <div class="input-wrapper">
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>Escolha uma opção...</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão de Conteúdo</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="mensagem">Mensagem</label>
+            <div class="input-wrapper">
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <i class="fa-solid fa-pen input-icon-textarea"></i>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-enviar">
+            ENVIAR MENSAGEM
+            <i class="fa-solid fa-egg"></i>
+        </button>
+    </form> 
+    <p>Outras formas de Contato</p>
+    <div class="redes-sociais-pergaminho">
+            <a href="https://www.linkedin.com/in/guilherme-rodrigo-120843347/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn <br><br>
+            </a>
+            <a href="https://github.com/Guilherme-07-06" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </div>
+</main>
 
 <footer>
     <a href="#">
