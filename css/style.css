@@ -350,3 +350,115 @@ button.btn-enviar:active {
    visibility: visible !important;
     background-color: #65b63f !important;
 }
+
+.card-dinossauro {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-dinossauro h3 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0;
+    border-bottom: 2px solid #65b63f;
+    padding-bottom: 10px;
+}
+
+.tabela-ficha {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.tabela-ficha th,
+.tabela-ficha td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+
+.tabela-ficha th {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #65b63f;
+    width: 35%;
+}
+
+.tabela-ficha td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tabela-ficha tr:last-child th,
+.tabela-ficha tr:last-child td {
+    border-bottom: none;
+}
+
+.img-dino {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 2px solid #65b63f;
+}
+
+.container-dinossauros {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    padding: 20px;
+}
+
+.container-fosseis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card-fossil {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card-fossil img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #65b63f;
+    margin-bottom: 15px;
+}
+
+.card-fossil h2 {
+    color: #65b63f;
+    font-size: 1.4em;
+    margin: 10px 0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.card-fossil p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #dddddd;
+    text-align: justify;
+}
+
+.card-fossil p strong {
+    color: #ffffff;
+}
