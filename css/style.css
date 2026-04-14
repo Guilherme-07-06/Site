@@ -281,3 +281,72 @@ button.btn-enviar:active {
     transform: translateY(-4px); 
     box-shadow: 0 6px 15px rgba(0,0,0,0.7);
 }
+
+.galeria-filmes {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none;
+    gap: 110px;
+    padding: 0;
+    margin: 0 auto 40px auto;
+    max-width: 1000px; 
+}
+
+.galeria-filmes li {
+    text-align: center;
+    width: 300px;
+    padding: 0;
+    position: relative; 
+}
+
+.galeria-filmes li:last-child .movie-title::after,
+.galeria-filmes li:first-child .movie-title::before{
+    visibility: hidden;
+}
+
+.movie-number {
+    color: #65b63f;
+    margin-right: 5px;
+}
+
+.movie-title {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    font-size: 1.1em;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.movie-title::before {
+    content: '';
+    flex-grow: 1; 
+    height: 6px;
+    background-color: #65b63f; 
+    margin-right: 12px; 
+    margin-left: -55px;
+}
+
+.movie-title::after {
+    content: '';
+    flex-grow: 1; 
+    height: 6px; 
+    background-color: #65b63f;
+    margin-left: 12px; 
+    margin-right: -55px;
+}
+
+.galeria-filmes img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.mostrar-linhas .movie-title::before,
+.mostrar-linhas .movie-title::after {
+   visibility: visible !important;
+    background-color: #65b63f !important;
+}
