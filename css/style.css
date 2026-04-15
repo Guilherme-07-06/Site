@@ -510,3 +510,64 @@ button.btn-enviar:active {
 .card-curiosidade li {
     margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 0px 15px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    header a {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin-top: 30px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav li {
+        border-right: none;
+        padding: 5px 10px;
+    }
+
+    .galeria-filmes {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .galeria-filmes li {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .movie-title::before,
+    .movie-title::after {
+        display: none;
+    }
+
+    .linha-de-imagens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linha-de-imagens figure {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .linha-de-imagens img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
