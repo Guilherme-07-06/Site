@@ -571,3 +571,85 @@ button.btn-enviar:active {
         max-width: 400px;
     }
 }
+
+:root {
+    --cor-fundo-dropdown: #2d5a27;
+    --cor-texto-dropdown: #ffffff;
+    --cor-hover-dino: #65b63f;
+    --tempo-transicao: 0.3s;
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 100;
+}
+
+.hamburger {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all var(--tempo-transicao);
+}
+
+#nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: var(--cor-fundo-dropdown);
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 280px;
+    padding: 15px 0;
+    z-index: 99;
+    border: 3px solid #0c0300;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+#nav-list.active {
+    display: flex;
+}
+
+#nav-list li {
+    text-align: center;
+    margin: 10px 0;
+    border-right: none !important;
+    padding: 0;
+}
+
+#nav-list li a {
+    color: var(--cor-texto-dropdown) !important;
+    font-size: 1.1rem;
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--tempo-transicao);
+}
+
+#nav-list li a:hover {
+    color: var(--cor-hover-dino) !important;
+}
+
+nav a::after {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+    #nav-list {
+        width: 250px;
+        right: -15px;
+    }
+}

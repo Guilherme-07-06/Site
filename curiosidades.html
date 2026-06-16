@@ -26,7 +26,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
     <nav>
-       <ul>
+        <button class="hamburger" id="btn-hamburger" aria-label="Abrir Menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
+       <ul id="nav-list">
         <li><a href="index.html">Início</a></li>
             <li><a href="eras.html">Eras</a></li>
             <li><a href="famosos.html">Dinossauros mais Famosos</a></li>
@@ -105,5 +111,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </a>
 </footer>
 
+<script>
+        const btnHamburger = document.getElementById('btn-hamburger');
+        const navList = document.getElementById('nav-list');
+
+        btnHamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+    
 </body>
 </html>
